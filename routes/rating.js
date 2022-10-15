@@ -1,9 +1,11 @@
 const express = require('express');
-const {addRating, getRatings } = require('../controllers/rating');
+const {addRating, getUpvotes, getDownvotes, getComments } = require('../controllers/rating');
 const router = express.Router();
 
 router.post('/addrating', addRating);
-router.get('/getrating/:url', getRatings);
+router.get('/getupvotes/:url', getUpvotes);
+router.get('/getdownvotes/:url', getDownvotes);
+router.get('/getcomments/:url', getComments);
 
 
 module.exports = router;

@@ -8,12 +8,9 @@ const RatingSchema = new mongoose.Schema({
     },
     upvotes: {
         type: Number,
-    },
-    downvotes: {
-        type: Number,
         default:0
     },
-    neutral: {
+    downvotes: {
         type: Number,
         default:0
     },
